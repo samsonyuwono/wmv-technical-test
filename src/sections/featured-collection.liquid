@@ -9,31 +9,35 @@
 <section class="featured-collection" data-section-id="{{ section.id }}" data-section-type="featured-collection">
   {%- assign collection = collections[section.settings.collection] -%}
 
-  <h2>{{ collection.title | escape }}</h2>
+  <h2 id="title">{{ collection.title | escape }}</h2>
 
-  <p>{{ collection.description }}</p>
+  <p id="description">{{ collection.description }}</p>
 
-  {% for product in collection.products limit: 6 %}
+<div class="main-carousel">
+  {% for product in collection.products %}
     {% assign current_variant = product.selected_or_first_available_variant %}
-  
-    <a href="{{ product.url | within: collection }}">
-      <div>
+
+    <a class='carousel-cell' href="{{ product.url | within: collection }}">
+      <div class="carousel-image">
         {% if product.featured_image != blank %}
           {{ product.featured_image | img_url: 'large' | img_tag }}
         {% endif %}
-        
-        <span js-ajax-cart="addToCart" data-variant-id="{{ current_variant.id }}" data-quantity="1">Add to cart</span>
+
+        <span class="add-to-cart" js-ajax-cart="addToCart" data-variant-id="{{ current_variant.id }}" data-quantity="1">Add to cart</span>
       </div>
 
       <div>
-        <p>{{ product.title | escape }}</p>
+        <p id="product-title">{{ product.title | escape }}</p>
 
-        <span>
+        <span id="product-price">
           {% include 'product-price' %}
         </span>
       </div>
     </a>
   {% endfor %}
+  </div>
+
+  <button id="view-button">View Collection</button>
 </section>
 
 {% schema %}

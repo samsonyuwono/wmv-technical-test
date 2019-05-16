@@ -1,12 +1,14 @@
 /**
  * Text colors.
  */
-$color-body-text: 'aktiv-grotesk', sans-serif;
+$color-body-text: "aktiv-grotesk", sans-serif;
+$blue: #003366;
+$grey: #9b9b9b;
 
 /**
  * Background colors.
  */
-$color-body: 'aktiv-grotesk', sans-serif;
+$color-body: "aktiv-grotesk", sans-serif;
 
 /**
  * Placeholders.
@@ -33,7 +35,7 @@ $color-success-bg: #000000;
 /**
  * Typography.
  */
-$font-heading: 'aktiv-grotesk', sans-serif;
+$font-heading: "aktiv-grotesk", sans-serif;
 $font-body: var(--font-body);
 $font-body-weight: var(--font-body-weight);
 $font-body-style: var(--font-body-style);
@@ -58,22 +60,22 @@ $grid-gutter: 30px;
  * Breakpoints.
  * - To be used with the media-query mixin.
  */
-$small: 'small';
-$medium: 'medium';
-$medium-down: 'medium-down';
-$medium-up: 'medium-up';
-$large: 'large';
-$large-down: 'large-down';
-$large-up: 'large-up';
-$widescreen: 'widescreen';
+$small: "small";
+$medium: "medium";
+$medium-down: "medium-down";
+$medium-up: "medium-up";
+$large: "large";
+$large-down: "large-down";
+$large-up: "large-up";
+$widescreen: "widescreen";
 
 $breakpoints: (
-  $small '(max-width: #{$grid-medium - 1})',
-  $medium '(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})',
-  $medium-down '(max-width: #{$grid-large - 1})',
-  $medium-up '(min-width: #{$grid-medium})',
-  $large '(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})',
-  $large-down '(max-width: #{$grid-widescreen - 1})',
-  $large-up '(min-width: #{$grid-large})',
-  $widescreen '(min-width: #{$grid-widescreen})'
+  $small "(max-width: #{$grid-medium - 1})",
+  $medium "(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})",
+  $medium-down "(max-width: #{$grid-large - 1})",
+  $medium-up "(min-width: #{$grid-medium})",
+  $large "(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})",
+  $large-down "(max-width: #{$grid-widescreen - 1})",
+  $large-up "(min-width: #{$grid-large})",
+  $widescreen "(min-width: #{$grid-widescreen})"
 );
