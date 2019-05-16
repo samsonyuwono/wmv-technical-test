@@ -7,26 +7,25 @@
 body {
   font-family: "Helvetica Neue", sans-serif;
 }
-.featured-collection {
-  .featured-collection {
-    text-align: center;
 
-    .main-carousel {
-      border: 2px solid red;
-    }
-    #title {
-      font-family: inherit;
-      font-size: 40px;
-      color: $blue;
-      line-height: 44px;
-    }
-    #description {
-      margin: 0 auto;
-      color: #9b9b9b;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 26px;
-      width: 550px;
-    }
+.featured-collection {
+  text-align: center;
+
+  .main-carousel {
+    border: 2px solid red;
+  }
+  #title {
+    font-family: inherit;
+    font-size: 40px;
+    color: $blue;
+    line-height: 44px;
+  }
+  #description {
+    margin: 0 auto;
+    color: #9b9b9b;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    width: 550px;
   }
 }
