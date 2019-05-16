@@ -38,6 +38,17 @@ body {
     .carousel-image {
       position: relative;
 
+      .sale-tag {
+        position: absolute;
+        padding: 5px 13px;
+        top: 10px;
+        right: 13px;
+        background-color: $blue;
+        color: #ffff;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
       .add-to-cart {
         display: none;
         position: absolute;

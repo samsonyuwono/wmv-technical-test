@@ -18,7 +18,7 @@ if (cookiesEnabled()) {
 
 var elem = document.querySelector(".main-carousel");
 var flkty = new Flickity(elem, {
-  cellAlign: "right",
+  cellAlign: "center",
   groupCells: 4,
   contain: true,
   wrapAround: true
