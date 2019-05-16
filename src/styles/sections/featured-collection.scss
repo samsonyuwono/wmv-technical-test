@@ -11,9 +11,6 @@ body {
 .featured-collection {
   text-align: center;
 
-  .main-carousel {
-    border: 2px solid red;
-  }
   #title {
     font-family: inherit;
     font-size: 40px;
@@ -22,10 +19,85 @@ body {
   }
   #description {
     margin: 0 auto;
-    color: #9b9b9b;
+    color: $grey;
     font-size: 18px;
     font-weight: 300;
     line-height: 26px;
     width: 550px;
+  }
+
+  .main-carousel {
+    margin: 40px;
+    .carousel-cell {
+      padding: 0 1.05rem;
+      width: 25%;
+      max-width: 100%;
+      text-decoration: none;
+      text-align: left;
+    }
+    .carousel-image {
+      position: relative;
+
+      .add-to-cart {
+        display: none;
+        position: absolute;
+        color: $blue;
+        margin-left: 5%;
+        padding: 15px;
+        bottom: 20px;
+        height: 50px;
+        width: 90%;
+        background-color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+      &:hover .add-to-cart {
+        display: block;
+      }
+    }
+    .product-info {
+      margin: -10px 0;
+      #product-title {
+        color: $blue;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 29px;
+      }
+
+      #product-price {
+        color: $grey;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+  .flickity-prev-next-button.previous {
+    left: -38px;
+    top: 38%;
+    color: #929292;
+  }
+  .flickity-prev-next-button.next {
+    right: -38px;
+    top: 38%;
+    color: #929292;
+  }
+
+  .flickity-page-dots {
+    .dot {
+      height: 7px;
+      width: 7px;
+    }
+  }
+
+  #view-button {
+    margin: 30px 0;
+    height: 55px;
+    width: 175px;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: $blue;
   }
 }
